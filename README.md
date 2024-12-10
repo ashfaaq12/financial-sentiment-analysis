@@ -42,3 +42,42 @@ This repository contains a Financial Sentiment Analysis project leveraging BERT-
    ```bash
    pip install -r requirements.txt
    ```
+Usage
+
+### 1. Run the Jupyter Notebook:
+- Open ```Financial_Sentiment_Analysis_BERT.ipynb``` to train or fine-tune the BERT model and evaluate its performance.
+
+### 2. Launch the Gradio App:
+-    Start the web application for real-time sentiment analysis:
+    
+- ``` bash
+    python app.py
+    ```
+-   Open your browser and go to the URL provided by Gradio (e.g., http://127.0.0.1:7860).
+
+### 3. Input Sentences:
+
+-    Enter financial-related text to analyze the sentiment.
+
+### Model Information
+The model is based on a pre-trained BERT variant and fine-tuned for financial sentiment classification. The following dataset columns were utilized:
+
+-    ```Sentence```: The financial text to classify.
+-   ```Sentiment```: Target labels with classes (0: Negative, 1: Neutral, 2: Positive).
+-    ```text_length``` and ```word_count```: Auxiliary features used during exploration.
+
+### Results
+-  Best Accuracy: Achieved using a fine-tuned model with [Model Details].
+-  Deployment: The model is deployed in an interactive Gradio app for demonstration.
+  
+### Contributing
+
+Contributions are welcome! Feel free to fork the repository and submit pull requests. For significant changes, please open an issue first to discuss what you'd like to change.
+
+### Acknowledgments
+-    Hugging Face Transformers
+-    Financial datasets from various sources
+-    Gradio for building the web application
+
+### Contact
+For questions or feedback, please contact ashfaaqkk12@gmail.com.
